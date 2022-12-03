@@ -3,9 +3,9 @@ from django.http import HttpResponse
 
 # Create your views here.
 
-def blog_add(request):
+def todo_add(request):
     return HttpResponse("todo追加しました")
 
 
-def blog_delete(request):
+def todo_delete(request):
     return HttpResponse("todo削除しました")
