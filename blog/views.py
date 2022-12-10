@@ -18,8 +18,9 @@ def post_list(request):
     }
     return JsonResponse(data)
 
-def post_get(request):
-    tasks = Blog.objects.get(id=1)
+def post_get(request,id):
+    tasks = Blog.objects.get(id=id)
+    #左側のidは変数ではなくてkeywordこれに対してidという引数を右側に指定する
     data={
         "tasks":list(tasks.values())  
     }

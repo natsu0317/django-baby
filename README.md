@@ -4,5 +4,6 @@
 `docker compose run --rm web python manage.py startapp blog`
 # 起動する
 `docker compose up`
-# django
+# django shell を起動する
+`docker compose run --rm web python manage.py shell`
 # django
