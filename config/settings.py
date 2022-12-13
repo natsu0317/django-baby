@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'todo.apps.TodoConfig',
     'blog.apps.BlogConfig',
+    'youtube.apps.YoutubeConfig',
 ]
 
 MIDDLEWARE = [

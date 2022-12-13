@@ -68,4 +68,5 @@ urlpatterns = [
     path('square/<int:number>', square_func),
     path('blog/', include('blog.urls')),
     path('todo/',include('todo.urls')),
+    path('youtube/',include('youtube.urls')),
 ]

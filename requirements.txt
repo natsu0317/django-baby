@@ -1,2 +1,4 @@
 Django==3.2.10
+pillow 
+#画像の追加みたいな
 djangorestframework==3.13.1
