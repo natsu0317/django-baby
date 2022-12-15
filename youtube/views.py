@@ -32,9 +32,13 @@ class AccountVideoView(APIView):
 class Video_comment_username(APIView):
     def get(self,request,video_id):
         comments = Comment.objects.filter(video_id=video_id)
+        res_usernames=[]
         for comment in comments:
             res_username={
                 'comment':comment,
                 'username':comment.account.username
             }
-        return Response(res_username)
+            res_usernames.append(res_username)#appendはリストに追加みたいな
+        return Response(res_usernames)
+
+        #res_usernamesというリストにres_usernameという配列を追加する

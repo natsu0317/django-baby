@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'todo.apps.TodoConfig',
     'blog.apps.BlogConfig',
     'youtube.apps.YoutubeConfig',
+    'chat.apps.ChatConfig',
 ]
 
 MIDDLEWARE = [
