@@ -22,8 +22,8 @@ class ChatroomView(APIView):
         user=User.objects.get(user_id=user_id)
         rooms=user.rooms.all()
         res_chatrooms=[]
-        for room in rooms
-        res_chatroom = {
+        for room in rooms:
+            res_chatroom = {
             'room_name':Chatroom.chatroomname,
             'username':User.username,
             'chatroom':User.chatroom
