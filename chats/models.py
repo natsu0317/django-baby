@@ -5,7 +5,9 @@ from django.utils import timezone
 
 class User(models.Model):
     username=models.CharField(max_length=50)
-    chatroom=models.ManyToManyField('Chatroom',related_name='chatroom_user')
+    email = models.EmailField()
+    password = models.CharField(max_length=100)
+    chatroom=models.ManyToManyField('Chatroom',related_name='chatroom_user', null=True, blank=True)
 
     def __str__(self):
         return self.username
@@ -19,8 +21,8 @@ class Chatroom(models.Model):
 
 class Chat(models.Model):
     chat=models.TextField()
-    chatroom=models.ForeignKey(Chatroom, on_delete=models.CASCADE)
+    chatroom=models.ForeignKey(Chatroom, on_delete=models.CASCADE, related_name="chat")
     created_by=models.ForeignKey(User, on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.comment
+        return self.chat

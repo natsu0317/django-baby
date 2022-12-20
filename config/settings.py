@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'blog.apps.BlogConfig',
     'youtube.apps.YoutubeConfig',
     'chats.apps.ChatsConfig',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [

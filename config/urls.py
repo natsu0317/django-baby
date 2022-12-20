@@ -69,4 +69,5 @@ urlpatterns = [
     path('blog/', include('blog.urls')),
     path('todo/',include('todo.urls')),
     path('youtube/',include('youtube.urls')),
+    path('chats/',include('chats.urls')),
 ]
